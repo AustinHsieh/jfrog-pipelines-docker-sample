@@ -48,7 +48,7 @@ pipelines:
             - name: Artifactory191                            # <-- replace with your artifactory integration
         execution:
           onStart:
-            - echo "Preparing for work..."
+            - docker login
 
       - name: docker_push
         type: DockerPush
