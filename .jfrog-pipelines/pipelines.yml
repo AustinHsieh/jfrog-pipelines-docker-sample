@@ -48,7 +48,7 @@ pipelines:
             - name: Artifactory191                            # <-- replace with your artifactory integration
         execution:
           onStart:
-            - docker login --username austinhsieh --password-stdin aaaa
+            - docker login --username austinhsieh --password 38wzvkHGwWCmh4Q
 
       - name: docker_push
         type: DockerPush
