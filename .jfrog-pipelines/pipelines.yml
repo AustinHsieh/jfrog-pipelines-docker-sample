@@ -46,6 +46,9 @@ pipelines:
             - name: dbp_repo
           integrations:
             - name: DockerHubAustin                            # <-- replace with your artifactory integration
+        execution:
+          onStart:
+            - echo "Preparing for work..."
 
       - name: docker_push
         type: DockerPush
