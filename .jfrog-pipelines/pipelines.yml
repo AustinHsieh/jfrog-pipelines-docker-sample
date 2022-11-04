@@ -45,7 +45,7 @@ pipelines:
           inputResources:
             - name: dbp_repo
           integrations:
-            - name: Artifactory191                            # <-- replace with your artifactory integration
+            - name: DockerHubAustin                            # <-- replace with your artifactory integration
 
       - name: docker_push
         type: DockerPush
