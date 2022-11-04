@@ -45,7 +45,7 @@ pipelines:
           inputResources:
             - name: dbp_repo
           integrations:
-            - name: DockerHubAustin                            # <-- replace with your artifactory integration
+            - name: Artifactory191                            # <-- replace with your artifactory integration
         execution:
           onStart:
             - echo "Preparing for work..."
